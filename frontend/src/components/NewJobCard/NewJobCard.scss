@@ -1,0 +1,68 @@
+.newjobcard {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid black;
+
+    margin: 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.068);
+
+    .addIcon {
+        font-size: 40px;
+        margin: 20px 10px;
+        border: 1px solid black;
+        border-radius: 20px;
+        color: white;
+    }
+
+    .bottom {
+        padding: 0px 15px 0px 15px;
+
+        .jobRole {
+            margin-top: 10px;
+            color: rgba(255, 255, 255, 0.799);
+            font-size: 17px;
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .description {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.654);
+        }
+
+        .buttonGroup {
+            position: absolute;
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            bottom: 10px;
+
+            button {
+                width: 120px;
+                height: 30px;
+                margin: 8px;
+                align-items: center;
+                cursor: pointer;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgba(240, 207, 183, 0.206);
+                color: white;
+                font-size: 15px;
+                border-radius: 5px;
+                border: 1px solid black;
+                font-weight: 500;
+            }
+
+            button:hover {
+                background-color: rgba(240, 171, 121, 0.611);
+            }
+        }
+    }
+}

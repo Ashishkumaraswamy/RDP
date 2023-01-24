@@ -1,0 +1,103 @@
+.editpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(107, 60, 31, 0.517);
+
+    form {
+        background: linear-gradient(rgba(36, 35, 37, 0.6), rgba(23, 21, 25, 0.8)), url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: 75vh;
+        width: 50%;
+        border-radius: 10px;
+        padding: 40px;
+
+        .jobTitle {
+            margin-top: 20px;
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+
+            label {
+                font-size: 20px;
+                font-weight: 600;
+                margin-left: 10%;
+                width: auto;
+                color: rgba(235, 230, 230, 0.739);
+            }
+
+            ::placeholder {
+                color: rgba(255, 255, 255, 0.343);
+            }
+
+            input {
+                color: white;
+                font-size: 18px;
+                background-color: transparent;
+                margin-left: auto;
+                margin-right: 10%;
+                width: 50%;
+                border: none;
+                border-bottom: 1px solid lightgray;
+                padding: 10px;
+            }
+
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                cursor: pointer;
+                border-radius: 4px;
+                margin-right: 2px;
+                opacity: 0.6;
+                filter: invert(0.8);
+            }
+
+            input[type="date"]::-webkit-calendar-picker-indicator:hover {
+                opacity: 1
+            }
+
+            textarea {
+                font-size: 18px;
+                background-color: transparent;
+                margin-left: auto;
+                margin-right: 10%;
+                width: 50%;
+                padding: 10px;
+                border: none;
+                color: white;
+                border-bottom: 1px solid lightgray;
+            }
+
+        }
+
+        .submitbtn {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                cursor: pointer;
+                width: 30%;
+                padding: 10px;
+                background-color: rgba(240, 207, 183, 0.558);
+                color: rgba(255, 254, 252, 0.531);
+                font-size: 15px;
+                border: none;
+            }
+
+            button:hover {
+                background-color: rgba(240, 171, 121, 0.782);
+            }
+        }
+
+    }
+}

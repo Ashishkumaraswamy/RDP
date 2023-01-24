@@ -1,0 +1,123 @@
+.register {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgba(107, 60, 31, 0.517);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        display: flex;
+        width: 50%;
+        min-height: 600px;
+        border-radius: 10px;
+        background: white;
+        overflow: hidden;
+        flex-direction: row-reverse;
+
+        .left {
+            flex: 1;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            padding: 50px;
+            background: linear-gradient(rgba(36, 35, 37, 0.4), rgba(23, 21, 25, 0.6)), url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center;
+            background-size: cover;
+
+            h1 {
+                color: rgba(255, 255, 255, 0.772);
+                font-size: 65px;
+                line-height: 1.5cm;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.852);
+                font-size: 20px;
+            }
+
+            span {
+                color: rgba(255, 255, 255, 0.71);
+                font-size: 18px;
+            }
+
+            button {
+                width: 40%;
+                margin-top: 20px;
+                height: 40px;
+                cursor: pointer;
+                border: transparent;
+                font-weight: bold;
+                background-color: rgba(240, 207, 183, 0.558);
+                color: rgba(255, 254, 252, 0.531);
+                font-size: 15px;
+            }
+
+            button:hover {
+                background-color: rgba(240, 171, 121, 0.782);
+            }
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+
+            .errorMessage {
+                font-size: 16px;
+                color: rgba(255, 0, 0, 0.867);
+            }
+
+            h1 {
+                font-size: 50px;
+                color: rgba(2, 2, 2, 0.72);
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding: 0px;
+                justify-content: center;
+                align-items: center;
+
+                input {
+                    height: 30px;
+                    width: 150%;
+                    border: none;
+                    padding: 10px;
+                    border-bottom: 1px solid lightgray;
+                }
+
+                Select {
+                    height: 30px;
+                    width: 150%;
+                    border: none;
+                    padding: 10px;
+                    border-bottom: 1px solid lightgray;
+                }
+
+                button {
+                    width: 100%;
+                    margin-top: 20px;
+                    height: 40px;
+                    cursor: pointer;
+                    border: transparent;
+                    font-weight: bold;
+                    background-color: rgb(240, 207, 183);
+                    color: rgb(255, 254, 252);
+                    font-size: 15px;
+                }
+
+                button:hover {
+                    background-color: rgba(240, 171, 121, 0.782);
+                }
+            }
+        }
+    }
+}

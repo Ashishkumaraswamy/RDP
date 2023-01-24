@@ -1,0 +1,63 @@
+.home {
+    min-height: 100vh;
+    padding: 0px 80px;
+    background: linear-gradient(rgba(36, 35, 37, 0.6), rgba(23, 21, 25, 0.6)), url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center;
+    background-size: cover;
+    color: white;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0px;
+        background-color: transparent;
+        height: 30px;
+
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            img {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+
+            .title {
+                color: white;
+                line-height: 5px;
+                font-size: 20px;
+            }
+        }
+
+        .right {
+            .logout {
+                color: white;
+                cursor: pointer;
+                font-size: 30px;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+        padding-top: 40px;
+        margin: 0px;
+    }
+
+    p {
+        font-size: 20px;
+
+    }
+
+    .joblistings {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+    }
+}
